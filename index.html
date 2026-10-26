@@ -75,10 +75,11 @@ details p{margin:.7rem 0 0;color:var(--mut)}
 footer{border-top:1px solid var(--line);padding:2rem 0;font:.8rem var(--m);color:var(--mut)}
 .about-grid{display:grid;gap:1.5rem;align-items:start}
 .headshot{margin:0}
-.headshot img{width:100%;max-width:20rem;border-radius:.75rem;border:1px solid var(--line);display:block}
+.headshot img{width:100%;max-width:14rem;aspect-ratio:3/4;object-fit:cover;border-radius:.75rem;border:1px solid var(--line);display:block;margin:0 auto}
 .headshot figcaption{font:.75rem var(--m);color:var(--mut);margin-top:.5rem}
 @media(min-width:48rem){
 .about-grid{grid-template-columns:20rem 1fr}
+.headshot img{max-width:16rem}
 }
 @media(min-width:48rem){
 .g2{grid-template-columns:1fr 1fr}
