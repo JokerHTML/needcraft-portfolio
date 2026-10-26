@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Saad Ranjha — NeedCraft | Social Media Management &amp; Short-Form Video</title>
+<meta name="description" content="Saad Ranjha (NeedCraft): daily content systems for brands — social media management and AI-assisted short-form video editing, proven on my own 9-platform operation.">
+<meta name="theme-color" content="#0A0A0C">
+<style>
+:root{--bg:#0A0A0C;--fg:#F5F2EA;--ac:#FFC933;--mut:#B9B5A8;--card:#141418;--line:#2a2a31;
+--h:"Sora","Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+--b:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+--m:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:4rem}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--fg);font:1rem/1.65 var(--b);-webkit-text-size-adjust:100%}
+a{color:var(--ac)}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--ac);outline-offset:3px}
+.skip{position:absolute;left:-999px;top:0;background:var(--ac);color:#0A0A0C;padding:.6rem 1rem;z-index:100}
+.skip:focus{left:0}
+.wrap{max-width:68rem;margin:0 auto;padding:0 1.25rem}
+header{position:sticky;top:0;background:rgba(10,10,12,.96);border-bottom:1px solid var(--line);z-index:50}
+header .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:.25rem 1rem;padding-top:.6rem;padding-bottom:.6rem}
+.logo{font:700 1rem var(--h);color:var(--fg);text-decoration:none;margin-right:auto}
+.logo span{color:var(--ac)}
+nav ul{display:flex;flex-wrap:wrap;gap:.1rem .9rem;list-style:none;margin:0;padding:0}
+nav a{font:.75rem var(--m);color:var(--mut);text-decoration:none;text-transform:uppercase;letter-spacing:.04em}
+nav a:hover{color:var(--ac)}
+section{padding:3.5rem 0;border-top:1px solid var(--line)}
+h1,h2,h3{font-family:var(--h);line-height:1.2;margin:0 0 1rem}
+h1{font-size:clamp(1.7rem,5.5vw,3rem);font-weight:700}
+h2{font-size:clamp(1.4rem,4vw,2rem)}
+h3{font-size:1.1rem}
+.lab{font:.75rem var(--m);color:var(--ac);text-transform:uppercase;letter-spacing:.08em;margin:0 0 .6rem;display:block}
+p{margin:0 0 1rem}
+.mut{color:var(--mut)}
+.btn{display:inline-block;background:var(--ac);color:#0A0A0C;font:700 1rem var(--h);padding:.85rem 1.4rem;border-radius:.5rem;text-decoration:none}
+.btn:hover{background:#ffd966}
+.grid{display:grid;gap:1rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:.75rem;padding:1.25rem}
+.tag{display:inline-block;font:.72rem var(--m);color:#0A0A0C;background:var(--ac);padding:.15rem .5rem;border-radius:.3rem;margin-bottom:.7rem}
+.vid{position:relative;aspect-ratio:16/9;width:100%;background:#000;border:1px solid var(--line);border-radius:.75rem;overflow:hidden}
+.vid iframe,.facade{position:absolute;inset:0;width:100%;height:100%;border:0}
+.facade{display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 50% 40%,#23231f,#0A0A0C 70%);cursor:pointer;color:var(--fg);font:.8rem var(--m)}
+.play{width:4.5rem;height:4.5rem;border-radius:50%;background:var(--ac);position:relative;display:block}
+.play::after{content:"";position:absolute;left:1.75rem;top:1.25rem;border-left:1.5rem solid #0A0A0C;border-top:1rem solid transparent;border-bottom:1rem solid transparent}
+.cap{font:.75rem var(--m);color:var(--mut);margin:.5rem 0 0}
+.hero{padding:3rem 0}
+.hero .btn{margin:.5rem 0 2rem}
+.dl{margin:0}
+.dl dt{font:.72rem var(--m);color:var(--ac);text-transform:uppercase;letter-spacing:.06em;margin-top:.9rem}
+.dl dd{margin:.15rem 0 0}
+.ph{aspect-ratio:16/9;background:repeating-linear-gradient(45deg,#17171b,#17171b 10px,#1c1c21 10px,#1c1c21 20px);border:1px dashed var(--line);border-radius:.5rem;display:flex;align-items:center;justify-content:center;font:.75rem var(--m);color:var(--mut);text-align:center;padding:.5rem}
+.t1 .card a.btn{margin-top:.5rem}
+.t2{grid-template-columns:repeat(auto-fit,minmax(11rem,1fr))}
+.t2 a{display:block;background:var(--card);border:1px solid var(--line);border-radius:.5rem;padding:.7rem .9rem;color:var(--fg);text-decoration:none;font:.9rem var(--b)}
+.t2 a:hover{border-color:var(--ac)}
+.t2 small{display:block;font:.7rem var(--m);color:var(--mut)}
+ol.steps{padding-left:1.4rem}
+ol.steps li{margin-bottom:.7rem}
+ol.steps li::marker{color:var(--ac);font-family:var(--m)}
+.price{font:700 1.15rem var(--h);color:var(--ac);margin:0}
+.price small{display:block;font:.8rem var(--m);color:var(--mut);font-weight:400}
+.row{padding:.8rem 0;border-top:1px solid var(--line)}
+details{background:var(--card);border:1px solid var(--line);border-radius:.6rem;margin-bottom:.7rem;padding:.9rem 1.1rem}
+summary{cursor:pointer;font:600 1rem var(--h)}
+details p{margin:.7rem 0 0;color:var(--mut)}
+footer{border-top:1px solid var(--line);padding:2rem 0;font:.8rem var(--m);color:var(--mut)}
+@media(min-width:48rem){
+.g2{grid-template-columns:1fr 1fr}
+.g3{grid-template-columns:repeat(3,1fr)}
+.hero{padding:4.5rem 0}
+section{padding:5rem 0}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+<div class="wrap">
+<a class="logo" href="#hero">Need<span>Craft</span></a>
+<nav aria-label="Primary">
+<ul>
+<li><a href="#proof">Proof</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#cases">Case studies</a></li>
+<li><a href="#process">Process</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#social">Social</a></li>
+<li><a href="#gumroad">Gumroad</a></li>
+<li><a href="#pricing">Pricing</a></li>
+<li><a href="#faq">FAQ</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<main id="main">
+
+<section id="hero" class="hero" style="border-top:0">
+<div class="wrap">
+<span class="lab">Saad Ranjha · NeedCraft</span>
+<h1>Daily content systems for brands — social media management and short-form video, proven on my own 9-platform operation.</h1>
+<a class="btn" href="mailto:saadranjha5@gmail.com">Email me about your content</a>
+<!-- TODO: replace SHOWREEL_VIDEO_ID with the real YouTube video ID -->
+<div class="vid" id="reel">
+<button type="button" class="facade" id="reelBtn" aria-label="Load and play showreel video"><span class="play"></span></button>
+</div>
+<p class="cap">Showreel placeholder — video ID to be added</p>
+</div>
+</section>
+
+<section id="proof">
+<div class="wrap">
+<span class="lab">Proof strip</span>
+<h2>Three real, checkable items — all my own work</h2>
+<div class="grid g3">
+<div class="card"><span class="tag">My own work</span><h3>NeedCraft 9-platform operation</h3><p class="mut">My own-brand daily content operation across nine platforms. Live profiles are listed in the Social section.</p></div>
+<div class="card"><span class="tag">My own channel — not client work</span><h3>Joker Gaming on YouTube</h3><p class="mut">8,150 subscribers / 186,416 views. My own channel — not client work.</p></div>
+<div class="card"><span class="tag">My own business — not client work</span><h3>Master Mind Computer Center</h3><p class="mut">5.0-star listing. My own business — not client work.</p></div>
+</div>
+<p class="cap">I have no paid clients yet. Nothing above is client work.</p>
+</div>
+</section>
+
+<section id="services">
+<div class="wrap">
+<span class="lab">Services</span>
+<h2>Two services, nothing else</h2>
+<div class="grid g2">
+<div class="card"><h3>1. Social Media Management</h3><p class="mut">Daily content systems: content calendars, posting, captions, community basics, and a monthly reporting rhythm.</p></div>
+<div class="card"><h3>2. Short-Form Video Editing (AI-assisted)</h3><p class="mut">Short-form edits (Reels / Shorts / TikTok-style), captions and subtitles, and hooks. AI-assisted workflow with human review on every cut.</p></div>
+</div>
+</div>
+</section>
+
+<section id="cases">
+<div class="wrap">
+<span class="lab">Case studies</span>
+<h2>Four case studies, labelled honestly</h2>
+<div class="grid g2">
+
+<article class="card">
+<span class="tag">My own operation</span>
+<h3>1. Own-brand 9-platform content system</h3>
+<dl class="dl">
+<dt>Problem</dt><dd>A new brand needs a steady daily presence, and I had no client budget to lean on.</dd>
+<dt>Constraints</dt><dd>One person, no paid team, nine platforms to keep consistent.</dd>
+<dt>What I did</dt><dd>Built a daily content system for NeedCraft: a content calendar, posting routine, captions, and basic community replies.</dd>
+<dt>Result</dt><dd>As of 26 Oct 2026, NeedCraft is live on nine platforms. Check the profiles in the Social section. No performance claims are made.</dd>
+<dt>What I'd do differently</dt><dd>Start a monthly reporting rhythm earlier, so every platform has a written review from day one.</dd>
+</dl>
+</article>
+
+<article class="card">
+<span class="tag">My own channel — not client work</span>
+<h3>2. Own YouTube channel: Joker Gaming</h3>
+<dl class="dl">
+<dt>Problem</dt><dd>Grow and maintain a gaming channel as a solo creator.</dd>
+<dt>Constraints</dt><dd>Solo production, with no outside team or budget.</dd>
+<dt>What I did</dt><dd>Ran the channel myself: recording, editing, publishing, and upkeep.</dd>
+<dt>Result</dt><dd>Listed at 8,150 subscribers / 186,416 views when this page was written (26 Oct 2026). Verify on the <a href="https://youtube.com/@jokergaminglive" target="_blank" rel="noopener noreferrer">live channel</a>.</dd>
+<dt>What I'd do differently</dt><dd>Plan hooks and titles before recording, and review the channel analytics on a fixed schedule.</dd>
+</dl>
+</article>
+
+<article class="card">
+<span class="tag">AI-assisted, human-reviewed</span>
+<h3>3. AI before/after edit</h3>
+<dl class="dl">
+<dt>Problem</dt><dd>Raw short-form footage needs captions, a strong opening hook, and tighter pacing before it is ready to post.</dd>
+<dt>Constraints</dt><dd>Fast turnaround, with every cut still checked by a person.</dd>
+<dt>What I did</dt><dd>Edit with an AI-assisted workflow (AI-assisted, human-reviewed): AI helps with rough cuts and caption drafts, and I review and correct every cut.</dd>
+<dt>Result</dt><dd>Before/after pair to be added below (placeholder). No performance claims are made.</dd>
+<dt>What I'd do differently</dt><dd>Document each edit decision in a short note, so a client can see what the AI did and what I changed.</dd>
+</dl>
+<div class="grid g2" style="margin-top:1rem"><div class="ph">Before — placeholder</div><div class="ph">After — placeholder</div></div>
+</article>
+
+<article class="card">
+<p style="font:700 .9rem var(--m);color:var(--ac);margin:0 0 .7rem">SPEC WORK — NOT A CLIENT</p>
+<h3>4. Spec campaign</h3>
+<dl class="dl">
+<dt>Problem</dt><dd>Show how a daily content system would be set up for a small brand, without a real client.</dd>
+<dt>Constraints</dt><dd>No real audience, no live data, and no brand access.</dd>
+<dt>What I did</dt><dd>Outline a spec content calendar, caption approach, and reporting layout. Hypothetical only.</dd>
+<dt>Result</dt><dd>No live results exist, because spec work has no audience data. The sample calendar is to be added (placeholder).</dd>
+<dt>What I'd do differently</dt><dd>Replace the spec with a real, small paid engagement and publish dated results with the client's permission.</dd>
+</dl>
+</article>
+
+</div>
+</div>
+</section>
+
+<section id="process">
+<div class="wrap">
+<span class="lab">Process</span>
+<h2>How an engagement runs</h2>
+<ol class="steps">
+<li><strong>Intro email.</strong> You tell me about your brand, platforms, and goals.</li>
+<li><strong>Scope and quote.</strong> I confirm the scope and the final quote (USD and PKR) before any work starts.</li>
+<li><strong>Payment.</strong> Starter Sprints are 100% upfront. Project work is 50% upfront / 50% on delivery.</li>
+<li><strong>Kickoff.</strong> You send brand basics, access, and raw footage as needed.</li>
+<li><strong>Production.</strong> I build the calendar and posts, or edit the videos. Any AI assistance is labelled, and every cut is human-reviewed.</li>
+<li><strong>Delivery and revisions.</strong> You review, and revisions follow the terms in the quote.</li>
+<li><strong>Ongoing.</strong> If we continue, I run the monthly content rhythm and a monthly report.</li>
+</ol>
+</div>
+</section>
+
+<section id="about">
+<div class="wrap">
+<span class="lab">About</span>
+<h2>Saad Ranjha, NeedCraft</h2>
+<p>I run NeedCraft and its daily content operation across nine platforms. I'm early-career and I have zero paid clients so far. Instead of inventing credentials, I prove my process on my own brands, and everything on this page about my results can be checked on the live profiles.</p>
+<p class="mut">If you want to see how I work before you hire me, look at the profiles below and email me.</p>
+</div>
+</section>
+
+<section id="social">
+<div class="wrap">
+<span class="lab">Social</span>
+<h2>Find me where I post</h2>
+<div class="grid g2 t1">
+<div class="card"><h3>YouTube — main</h3><p class="mut">The main NeedCraft channel.</p><a class="btn" href="https://youtube.com/@NeedCraftLab" target="_blank" rel="noopener noreferrer">Open YouTube</a></div>
+<div class="card"><h3>Instagram</h3><p class="mut">@needcraftco</p><a class="btn" href="https://instagram.com/needcraftco" target="_blank" rel="noopener noreferrer">Open Instagram</a></div>
+<div class="card"><h3>LinkedIn</h3><p class="mut">Saad Ranjha — NeedCraft</p><a class="btn" href="https://linkedin.com/in/saad-ranjha-needcraft" target="_blank" rel="noopener noreferrer">Open LinkedIn</a></div>
+<div class="card"><h3>Gumroad</h3><p class="mut">Digital products storefront.</p><a class="btn" href="https://needcraftco.gumroad.com" target="_blank" rel="noopener noreferrer">Open Gumroad</a></div>
+</div>
+<h3 style="margin-top:2rem">More platforms</h3>
+<div class="grid t2">
+<a href="https://threads.net/@needcraftco" target="_blank" rel="noopener noreferrer">Threads</a>
+<a href="https://x.com/needcraftco" target="_blank" rel="noopener noreferrer">X</a>
+<a href="https://facebook.com/profile.php?id=61595053016573" target="_blank" rel="noopener noreferrer">Facebook Page<small>(verify at deploy)</small></a>
+<a href="https://pinterest.com/needcraftco" target="_blank" rel="noopener noreferrer">Pinterest<small>(verify at deploy)</small></a>
+<a href="https://youtube.com/@jokergaminglive" target="_blank" rel="noopener noreferrer">YouTube channel 2</a>
+<a href="https://reddit.com/user/Saad-Finds-Things" target="_blank" rel="noopener noreferrer">Reddit</a>
+<a href="https://quora.com/profile/NeedCraft" target="_blank" rel="noopener noreferrer">Quora</a>
+</div>
+</div>
+</section>
+
+<section id="gumroad">
+<div class="wrap">
+<span class="lab">Gumroad</span>
+<h2>Digital products and resources</h2>
+<p class="mut">My Gumroad storefront is where my digital products and resources live. Browse it directly for what is currently listed.</p>
+<a class="btn" href="https://needcraftco.gumroad.com" target="_blank" rel="noopener noreferrer">Visit the Gumroad storefront</a>
+</div>
+</section>
+
+<section id="pricing">
+<div class="wrap">
+<span class="lab">Pricing</span>
+<h2>Offers and pricing</h2>
+<div class="grid g2">
+<div class="card">
+<h3>Starter Sprint</h3>
+<div class="row"><p><strong>Social Media Management</strong></p><p class="price">$250–350<small>about PKR 69,250–96,950</small></p></div>
+<div class="row"><p><strong>Video — 4 edits</strong> <span class="mut">(AI-assisted, human-reviewed)</span></p><p class="price">$120–200<small>about PKR 33,240–55,400</small></p></div>
+<p class="mut" style="margin-top:.8rem">100% upfront.</p>
+</div>
+<div class="card">
+<h3>Ongoing</h3>
+<div class="row"><p><strong>Social Media Management</strong></p><p class="price">$300–600/month<small>about PKR 83,100–166,200/month</small></p></div>
+<div class="row"><p><strong>Video</strong> <span class="mut">(AI-assisted, human-reviewed)</span></p><p class="price">$25–75/video<small>about PKR 6,925–20,775/video</small></p></div>
+</div>
+</div>
+<p style="margin-top:1rem"><strong>Project terms:</strong> 50% upfront / 50% on delivery.</p>
+<p class="cap">PKR figures use about 277/USD, 26 Oct 2026 — final quote confirmed before work starts.</p>
+</div>
+</section>
+
+<section id="faq">
+<div class="wrap">
+<span class="lab">FAQ</span>
+<h2>Honest answers</h2>
+<details><summary>Why are there no client testimonials?</summary><p>I have no paid clients yet, and I won't invent any. The proof here is my own work, which is labelled as mine and can be checked on the live profiles.</p></details>
+<details><summary>How is AI used in editing?</summary><p>AI assists with the workflow, such as rough cuts and caption drafts. A person (me) reviews and corrects every cut before delivery, and I label AI assistance wherever editing is mentioned.</p></details>
+<details><summary>What are typical timelines?</summary><p>Timelines depend on scope, so each quote states a delivery date before you pay. I'd rather confirm a realistic date than promise a fixed turnaround up front.</p></details>
+<details><summary>How do revisions work?</summary><p>The quote states how many revision rounds are included, agreed before work starts. Requests outside that scope are quoted separately.</p></details>
+<details><summary>What are the payment terms?</summary><p>Starter Sprints are 100% upfront. Project work is 50% upfront / 50% on delivery. Ongoing work follows the monthly terms in your quote.</p></details>
+<details><summary>What do you need from a client to start?</summary><p>A short brief about your brand and goals, access to your accounts (or a way to publish), any raw footage or assets, brand guidelines if you have them, and one person who approves work.</p></details>
+</div>
+</section>
+
+<section id="contact">
+<div class="wrap">
+<span class="lab">Contact</span>
+<h2>Let's talk about your content</h2>
+<p class="mut">Send me an email about your brand, your platforms, and what you need.</p>
+<a class="btn" href="mailto:saadranjha5@gmail.com">Email saadranjha5@gmail.com</a>
+</div>
+</section>
+
+</main>
+
+<footer>
+<div class="wrap">© 2026 Saad Ranjha · NeedCraft</div>
+</footer>
+
+<script>
+(function(){
+var b=document.getElementById("reelBtn");
+if(!b)return;
+b.addEventListener("click",function(){
+var f=document.createElement("iframe");
+f.src="https://www.youtube-nocookie.com/embed/SHOWREEL_VIDEO_ID";
+f.title="NeedCraft showreel";
+f.loading="lazy";
+f.allow="accelerometer; encrypted-media; gyroscope; picture-in-picture";
+f.allowFullscreen=true;
+b.replaceWith(f);
+});
+})();
+</script>
+</body>
+</html>
