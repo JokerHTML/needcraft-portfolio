@@ -132,9 +132,34 @@ section{padding:5rem 0}
 <a class="btn" href="mailto:saadranjha5@gmail.com">Email me about your content</a>
 <a class="btn btn2" href="https://wa.me/923215840558" target="_blank" rel="noopener noreferrer">WhatsApp 0321 5840558</a>
 <div class="vid" id="reel">
-<button type="button" class="facade" id="reelBtn" aria-label="Load and play showreel video" style="background-image:url('https://i.ytimg.com/vi/TWwqW8JScEE/hqdefault.jpg');background-size:cover;background-position:center"><span class="play"></span></button>
+<button type="button" class="facade" data-vid="k0yoz_CYR88" aria-label="Load and play showreel video: Your AI Email Sounds Like AI — The 1-Line Fix" style="background-image:url('https://i.ytimg.com/vi/k0yoz_CYR88/hqdefault.jpg');background-size:cover;background-position:center"><span class="play"></span></button>
 </div>
-<p class="cap">Showreel — Case File 018, a NeedCraft Short from my own channel. Watch the hook, captions, and pacing.</p>
+<p class="cap">Showreel — my most-viewed Short, "Your AI Email Sounds Like AI — The 1-Line Fix" (836 views, 9 Nov 2026). Watch the hook, captions, and pacing.</p>
+<h3 style="margin-top:2.5rem">More videos — most-viewed Shorts on my NeedCraft channel</h3>
+<div class="grid g3">
+<div class="card">
+<div class="vid">
+<button type="button" class="facade" data-vid="8b77S1lm0DA" aria-label="Load and play: ECC — The 285K-Star Toolkit for Claude Code" style="background-image:url('https://i.ytimg.com/vi/8b77S1lm0DA/hqdefault.jpg');background-size:cover;background-position:center"><span class="play"></span></button>
+</div>
+<h3 style="margin-top:.8rem">ECC — The 285K-Star Toolkit for Claude Code (Repo Teardown)</h3>
+<p class="cap">202 views · 9 Nov 2026</p>
+</div>
+<div class="card">
+<div class="vid">
+<button type="button" class="facade" data-vid="XbGEg5Ca3AU" aria-label="Load and play: Edit Videos Locally with AI — No Cloud Upload Needed" style="background-image:url('https://i.ytimg.com/vi/XbGEg5Ca3AU/hqdefault.jpg');background-size:cover;background-position:center"><span class="play"></span></button>
+</div>
+<h3 style="margin-top:.8rem">Edit Videos Locally with AI — No Cloud Upload Needed (OpenCutAI v0.4.0)</h3>
+<p class="cap">189 views · 9 Nov 2026</p>
+</div>
+<div class="card">
+<div class="vid">
+<button type="button" class="facade" data-vid="TWwqW8JScEE" aria-label="Load and play: MeiGen.AI — AI Prompt Library for Image Generation (Case File 018)" style="background-image:url('https://i.ytimg.com/vi/TWwqW8JScEE/hqdefault.jpg');background-size:cover;background-position:center"><span class="play"></span></button>
+</div>
+<h3 style="margin-top:.8rem">MeiGen.AI — AI Prompt Library for Image Generation (Case File 018)</h3>
+<p class="cap">42 views · 9 Nov 2026</p>
+</div>
+</div>
+<p style="margin-top:1.5rem"><a class="btn btn2" href="https://youtube.com/@NeedCraftLab/videos" target="_blank" rel="noopener noreferrer">See all videos on YouTube</a></p>
 </div>
 </section>
 
@@ -202,7 +227,7 @@ section{padding:5rem 0}
 <dt>Problem</dt><dd>Raw short-form footage needs captions, a strong opening hook, and tighter pacing before it is ready to post.</dd>
 <dt>Constraints</dt><dd>Fast turnaround, with every cut still checked by a person.</dd>
 <dt>What I did</dt><dd>Edit with an AI-assisted workflow (AI-assisted, human-reviewed): AI helps with rough cuts and caption drafts, and I review and correct every cut.</dd>
-<dt>Result</dt><dd>Watch the showreel above (Case File 018): the opening hook, caption-led pacing, and tight case-file structure are the edit itself — the same approach I use for brand Shorts. No performance claims are made.</dd>
+<dt>Result</dt><dd>Watch it in the More videos section above (Case File 018): the opening hook, caption-led pacing, and tight case-file structure are the edit itself — the same approach I use for brand Shorts. No performance claims are made.</dd>
 <dt>What I'd do differently</dt><dd>Document each edit decision in a short note, so a client can see what the AI did and what I changed.</dd>
 </dl>
 <p class="cap" style="margin-top:1rem">Edit breakdown — what to look for: the opening hook in the first seconds, captions that carry the pacing, and a structure that ends on the takeaway. AI-assisted, human-reviewed: AI helps with rough cuts and caption drafts, and I review and correct every cut.</p>
@@ -365,16 +390,17 @@ section{padding:5rem 0}
 
 <script>
 (function(){
-var b=document.getElementById("reelBtn");
-if(!b)return;
+var btns=document.querySelectorAll(".facade");
+btns.forEach(function(b){
 b.addEventListener("click",function(){
 var f=document.createElement("iframe");
-f.src="https://www.youtube-nocookie.com/embed/TWwqW8JScEE";
-f.title="Muhammad Saad Ranjha — showreel (Case File 018)";
+f.src="https://www.youtube-nocookie.com/embed/"+b.getAttribute("data-vid");
+f.title=b.getAttribute("aria-label")||"Video";
 f.loading="lazy";
 f.allow="accelerometer; encrypted-media; gyroscope; picture-in-picture";
 f.allowFullscreen=true;
 b.replaceWith(f);
+});
 });
 })();
 </script>
